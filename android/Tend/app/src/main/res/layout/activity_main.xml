@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream_bg"
+    android:orientation="vertical"
+    android:paddingStart="22dp"
+    android:paddingEnd="22dp">
+
+    <include
+        android:id="@+id/topBar"
+        layout="@layout/view_top_bar" />
+
+    <TextView
+        android:id="@+id/dateText"
+        style="@style/Tend.Muted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="Saturday 10 October"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/helloText"
+        style="@style/Tend.Display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Hello." />
+
+    <TextView
+        android:id="@+id/subtitleText"
+        style="@style/Tend.Muted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text=" "
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/emojiButton"
+            style="@style/Tend.Button.Soft"
+            android:layout_width="58dp"
+            android:layout_height="42dp"
+            android:fontFamily="@font/dm_sans_regular"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:text="🌱"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/habitInput"
+            style="@style/Tend.Input"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:hint="Drink water, read 10 pages…"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="textCapSentences"
+            android:maxLength="60"
+            android:maxLines="1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addButton"
+            style="@style/Tend.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:fontFamily="@font/dm_sans_medium"
+            android:text="Add"
+            app:icon="@drawable/ic_plus"
+            app:iconGravity="textStart"
+            app:iconPadding="6dp"
+            app:iconSize="18dp"
+            app:iconTint="@color/white" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/habitList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp" />
+
+</LinearLayout>
