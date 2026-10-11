@@ -11,3 +11,6 @@ A habit tracker. Android app (Kotlin + XML) and a REST API (ASP.NET Core + SQL S
 - Register and log in, passwords hashed with BCrypt on the server, JWT sessions
 - Settings: display name, profile photo, week start, accent colour, daily reminder, change password
 - Habits with a Mon-Sun check-in strip and streaks
+
+# YouTube link
+- https://youtube.com/shorts/588BSY2xmJ8?si=rxTM93bso26pkNtT
