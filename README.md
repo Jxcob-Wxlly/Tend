@@ -12,5 +12,6 @@ A habit tracker. Android app (Kotlin + XML) and a REST API (ASP.NET Core + SQL S
 - Settings: display name, profile photo, week start, accent colour, daily reminder, change password
 - Habits with a Mon-Sun check-in strip and streaks
 
-# YouTube link
+# YouTube link ( new link provided due to YouTube taking down first video)
 - https://youtube.com/shorts/588BSY2xmJ8?si=rxTM93bso26pkNtT
+- https://youtu.be/a37d7DyHO64?si=2sqyVspb8Bit9A5q (New video link).
